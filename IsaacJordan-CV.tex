@@ -12,11 +12,15 @@
 \usepackage[empty]{fullpage}
 \usepackage{color}
 \usepackage{hyperref}
+\usepackage{enumitem}
+
+\setdescription{leftmargin=0.2in}
 
 \definecolor{mygrey}{gray}{0.80}
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+\setlength{\parindent}{0in}
 
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
@@ -40,7 +44,7 @@
 \begin{document}
 
 	\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-		\textbf{\large Isaac M. Jordan}  &  \url{http://isaacjordan.me} \\
+		\textbf{\large Isaac M. Jordan -- Software Engineer}  &  \url{http://isaacjordan.me} \\
 		Glasgow, United Kingdom &  \url{http://uk.linkedin.com/in/ijordan} \\
 		IsaacJordan95@gmail.com &  \url{http://github.com/sheepzez} \\
 	\end{tabular*}
@@ -50,144 +54,58 @@
 
 	\resheading{Objective}
 	\begin{description}
-		\item \noindent
-		Fourth year undergraduate student at the University of Glasgow with 2 years of professional experience in software engineering.
-		Experienced in a variety of languages and technology stacks. \\
-		Exploring graduate opportunities from Summer 2017.
+		\item\noindent Professional software engineer with 4 years experience in small and large enterprise environments building innovative products aiming to be market leaders. Experienced in a variety of languages and technology stacks, mostly recently with Java, JavaScript, TypeScript, and AWS services (Lambda, EC2, SQS, DynamoDB, S3).
 	\end{description}
-
-	\resheading{Education}
-	\begin{itemize}
-		\item
-		\ressubheading{University of Glasgow}{Glasgow, UK}{BSc (Hons) in Computer Science (Expected First)}{Sep. 2013 - 2017}
-		\begin{itemize}
-			\resitem{Level 3 Class Prize - Strong A grades in all Computer Science classes, and many Mathematics classes.}
-			\resitem{First Prize at Glasgow Uni Tech Society Hackathon 2015 (see projects)}
-			\resitem{Studied Maths and Comp Sci in Second Year, and Maths, Physics, and Comp Sci in First Year.}
-		\end{itemize}
-
-		\item
-		\ressubheading{Trinity Academy}{Edinburgh, UK}{Secondary School}{2007 - 2013}
-		\begin{description}
-			\item[Sixth Year:] Adv. Higher Computing (A), Adv. Higher Mathematics (A), Adv. Higher Physics (B)
-			\item[Fifth Year:] Higher Computing (A), Higher Mathematics (A), Higher Physics (A), Higher Chemistry (A),
-			Higher Modern Studies (B)
-		\end{description}
-
-	\end{itemize}
 
 	\resheading{Work Experience}
 	\begin{itemize}
 		\item
+		\ressubheading{Amazon}{Edinburgh, UK}{Software Development Engineer II}{Sep 2018 - Present}
+		\begin{itemize}
+			\resitem{Integrated my team's video rendering API with a large Amazon Advertising product which involved collaborating with engineers and UX designers in Seattle over several months. Developed a new serverless micro-service to act as a mediator, created and integrated new TypeScript React components in another team's code, and set up automated alarming and monitoring.}
+			\resitem{Actively worked to improve my team's development and release process over time such as introducing SonarQube for code quality analysis which has improved our quality month-on-month.} 
+			\resitem{Introduced tools to monitor our operational load as a team (week-on-week tracking of ticket counts).}
+		\end{itemize}
+		
+		\item
+		\ressubheading{Amazon}{Edinburgh, UK}{Software Development Engineer I}{Sep 2017 - Sep 2018}
+		\begin{itemize}
+			\resitem{Launched a new video advertising program and increased performance by 10x in 6 months through rigorous experimentation, exceeding our team goal of \$500k sales.}
+			\resitem{Improved customer privacy by developing a micro-service to scrub personally indentifiable information from logs within seconds, far exceeding the quality of previous batch-based systems}
+			\resitem{Improved management and discoverability of projects in my team's system by developing new React components. Added a new front-end test harness to test code that was previously untested, using Enzyme for shallow rendering.}
+		\end{itemize}
+	
+		\item
 		\ressubheading{Amazon}{Edinburgh, UK}{Software Development Engineer Intern}{Jun 2016 - Aug 2017}
 		\begin{itemize}
-			\resitem{Created a prototype applicaiton with the goal of applying personalised video to existing content in a fast,
-			and automated fashion.}
-			\resitem{Created highly multithreaded system involving computer vision using OpenCV.}
-			\resitem{Developed skills around dealing with ambiguity, developing software in an ecosystem of thousands of engineers,
-			presenting my ideas, researching fields I am unfamiliar with, and creating solutions to problems where there is no prior art.}
+			\resitem{Created a prototype application with the goal of applying personalised video to existing content in a fast
+			and automated fashion. It utilised multithreading to process images in real-time with OpenCV.}
+			\resitem{Developed skills in dealing with ambiguity and creating solutions where there is no prior art.}
 		\end{itemize}
 
 		\item
-		\ressubheading{TBR Global Chauffeuring}{Glasgow, UK}{Software Developer (Part-Time)}{Sep 2015 - May 2016}
+		\ressubheading{TBR Global Chauffeuring}{Glasgow, UK}{Software Developer (Intern, followed by Part-Time)}{Jun 2015 - May 2016}
 		\begin{itemize}
-			\resitem{Worked on long-term projects, such as creating a web-based geofence manager using technologies such as
-			C\#, MVC.NET, JavaScript, and MapBox software.}
-		\end{itemize}
-
-		\item
-		\ressubheading{TBR Global Chauffeuring}{Glasgow, UK}{Software Developer Intern}{Jun 2015 - Aug 2015}
-		\begin{itemize}
-			\resitem{Created a toolset to improve how easily customer information could be obtained from Emirates Airline.
-			Steps included retrieving and parsing XML files from unreliable FTP servers, parsing free text and validating
-			using external services (OpenAddressesUK, Google Maps), labelling data with precision certainties, creating
-			a web app for multiple users to inspect, manipulate, and import into the TBR system using a REST API.}
-			\resitem {Played a major role in creating a microsite for Visa call-centers to use to quickly create new international
-			jobs in the TBR Global system. Worked as part of a team of 5 to complete the project in a very tight deadline.}
-			\resitem {Heavily used C\#, MVC 5, EntityFramework, SQL, JavaScript, jQuery, and Bootstrap.}
+			\resitem{Improved ingestion time of data from Emirates Airline from hours of manual effort to minutes by creating a system to retrieve, parse and visualise XML files from FTP servers which validated data using OpenAddressesUK and GoogleMaps.}
+			\resitem{Worked on long-term projects, such as creating a web-based geofence manager using C\#, MVC.NET, JavaScript, and MapBox software.}
 		\end{itemize}
 
 		\item
 		\ressubheading{Chi Squared Innovations}{Remote}{Software Developer (Part-Time)}{Sep 2014 - Jun 2015}
 		\begin{itemize}
-			\resitem {Worked closely with CEO to recreate the public facing website in-house using the Python/Django webstack.}
-			\resitem {Used D3.js, a JavaScript data visualisation library to create several dynamic graphs.}
+			\resitem {Worked closely with CEO to recreate the public facing website in-house using the Python/Django web-stack, along with D3.js data visualisation library.}
 		\end{itemize}
 
 	\end{itemize}
-
-	\pagebreak
-
-	\resheading{Projects}
+	
+	\resheading{Education}
 	\begin{itemize}
 		\item
-		\ressubheading{GUTS Hackathon 2015}{\url{https://github.com/Sheepzez/yorkhill-kinect}}
-		{Kinect game for Yorkhill Children's Hospital}{Oct 2015}
+		\ressubheading{University of Glasgow}{Glasgow, UK}{BSc (Hons) in Computer Science (First Class)}{2013 - 2017}
 		\begin{itemize}
-			\resitem{Winner of first prize overall, and Morgan Stanley's challenge at Glasgow University Tech Society (GUTS) Hackathon.}
-			\resitem{Game using Windows XNA in which players can work together to scrub a hospital of germs. Controlled by MS Kinect 2.0.}
-			\resitem{Utilises C\# Tasks for parallel processing of Kinect's multiple data streams.}
-			\resitem{Created in 3 days with a team of three.}
+			\resitem{Level 3 Class Prize - Strong A grades in all Computer Science classes, and many Mathematics classes.}
+			\resitem{First Prize at Glasgow University Tech Society Hackathon 2015.}
 		\end{itemize}
-
-		\item
-		\ressubheading{Google Maps API .NET}{\url{https://github.com/ericnewton76/gmaps-api-net}}
-		{Google Maps API C\# Library}{Jun 2015 - Dec 2015}
-		\begin{itemize}
-			\resitem{Significant contributor to open source class library.}
-			\resitem{Personally implemented Places API, and TimeZone API in the library.}
-			\resitem{Help manage tickets created by users, and decide how issues are tackled.}
-		\end{itemize}
-
-		\item
-		\ressubheading{Grub Grabber}{\url{https://github.com/Sheepzez/GrubGrabber}}
-		{Web app to help my friends decide where to go for lunch}{Jan 2015 - Mar 2015}
-		\begin{itemize}
-			\resitem{Allows users to register and blacklist or favourite locations, so that the search algorithm provides more tailored results. Also uses how many times a location was 'liked' to influence suggestions.}
-			\resitem{Uses unit tests to prevent regressions.}
-			\resitem{Developed as part of University course.}
-			\resitem{Utilises Python/Django webstack, ORM database, Google Maps JS API, and jQuery.}
-		\end{itemize}
-
-		\item
-		\ressubheading{The Matrixonator}{\url{https://github.com/Sheepzez/Matrixonator-Java}}
-		{JavaFX application for manipulating matrices}{Dec 2014 - Mar 2015}
-		\begin{itemize}
-			\resitem{Originally a Python project, this open source Java port proved to be much more powerful}
-			\resitem{Allows users to manipulate matrices via a GUI.}
-			\resitem{Handles basic operations such as addition, subtraction, and multiplication - as well as
-			more complex ones such as eigenvalue and reduced row-echeclon form (RREF) calculation.}
-			\resitem{Can identify shortcuts for calculations, such as eigenvalue calculation for matrices in RREF.}
-			\resitem{Has extensive unit tests, and utilises a continuous integration server to test commits and pull requests.}
-		\end{itemize}
-
-		\item
-		\ressubheading{Other Projects}{}
-		{General Activities}{}
-		\begin{itemize}
-			\resitem{Also attended other hackathons including GUTS Hackathon 2016 and 2014 (Glasgow Uni), and STACS Hack 2016 and 2015 (St Andrews Uni).}
-			\resitem{Have attended several talks at Glasgow University on the tech industry, and interesting problems industry faces.}
-		\end{itemize}
-
 	\end{itemize}
-
-	\resheading{Skills}
-	\begin{description}
-		\item[Languages:]
-		Java, C\#, Python, JavaScript, SQL, C
-
-		\item[Technologies:]
-		HTML5, CSS3, OpenCV, Bootstrap, Foundation, Django, jQuery, EntityFramework 6, IIS, C\# LINQ
-
-		\item[Tools:]
-		Visual Studio 2013/2015, SQL Server Management Studio, Eclipse, Git, SVN, Mercurial
-
-		\item[Operating Systems:]
-		Linux, Windows
-
-		\item[Miscellaneous:]
-		Exceptional troubleshooting and debugging skills. Able to quickly grasp interactions in large projects.
-		Strong algorithmic and multithreading skills.
-	\end{description}
 
 \end{document}
