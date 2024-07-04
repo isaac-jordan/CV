@@ -6,5 +6,5 @@ Isaac Jordan's CV - Latest version available for download in the bin/ folder.
 Make sure pdflatex is installed and on the current path.
 
 ```
-pdflatex --output-directory ./bin IsaacJordan-CV.tex
+pdflatex --output-directory bin IsaacJordan-CV.tex
 ```
