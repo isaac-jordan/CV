@@ -3,6 +3,7 @@
 % (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
 % (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
 % (c) 2007-2014 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
+% (c) 2015-Present Isaac M. Jordan <IsaacJordan95@gmail.com> https://isaacjordan.me
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
 
@@ -31,7 +32,7 @@
 
 %-----------------------------------------------------------
 %Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resitem}[1]{\item #1 \vspace{-1pt}}
 \newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
 \newcommand{\ressubheading}[4]{
 \begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
@@ -43,66 +44,125 @@
 
 \begin{document}
 
-	\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-		\textbf{\large Isaac M. Jordan -- Software Engineer}  &  \url{https://isaacjordan.me} \\
-		London, United Kingdom &  \url{https://uk.linkedin.com/in/ijordan} \\
-		IsaacJordan95@gmail.com &  \url{https://github.com/isaac-jordan} \\
-	\end{tabular*}
-	\\
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+	\textbf{\large Isaac M. Jordan -- Full-Stack Software Engineer}  &  \url{https://isaacjordan.me} \\
+	London, United Kingdom &  \url{https://uk.linkedin.com/in/ijordan} \\
+	IsaacJordan95@gmail.com &  \url{https://github.com/isaac-jordan} \\
+\end{tabular*}
+\\
 
-	\vspace{0.1in}
+\vspace{0.1in}
 
-	\resheading{Summary}
-	\begin{description}
-		\item\noindent Professional software engineer with 8 years experience in large and small enterprise environments building innovative products aiming to be market leaders. Experienced in a variety of languages and technology stacks, most recently with C\#, TypeScript, React, and Angular. Previous experience with Java, Kotlin, and AWS.
-	\end{description}
+\resheading{Summary}
+\begin{description}
+	\item\noindent Full-stack software engineer with \textbf{8 years experience} building and operating \textbf{global products} focussed on \textbf{brilliant user experience}. Experienced with refining and optimizing teams to sustainably deliver high-quality software, and shipping features that delight customers.
+\end{description}
 
-	\resheading{Work Experience}
+\resheading{Work Experience}
+\begin{itemize}
+	\item
+	\ressubheading{G-Research}{London, UK}{Software Engineer [C\#, TypeScript, React, Angular, K8s, Kafka, SQL]}{Oct 2021 - July 2024}
 	\begin{itemize}
-		\item
-		\ressubheading{G-Research - Europe's leading quantitative finance firm}{London, UK}{Software Engineer [TypeScript, React, Angular, C\#, K8s, Kafka, SQL]}{Oct 2021 - July 2024}
-		\begin{itemize}
-			\resitem{Created and iterated upon new tools for live monitoring of global trading, for example rejected trade analysis which provided mission-critical safety tools with great customer feedback.}
-			\resitem{Designed and implemented a new process and DSL for mass managing connection config with multi-person approval and an audit trail, allowing for teams to comfortably manage a 10x scale-up of connection types, unlocking new ways of trading.}
-			\resitem{Refined my team's development processes, e.g. moving towards a more flexible kanban model, reducing code review turnaround time, and running regular retrospectives, all with increased team satisfaction.}
-		\end{itemize}
-
-		\item
-		\ressubheading{AWS (Amazon CodeGuru Profiler)}{London, UK}{Software Development Engineer II [TypeScript, React, Kotlin, AWS]}{Sep 2019 - Oct 2021}
-		\begin{itemize}
-			\resitem{Developed a new product with a global team, such as simplified profiling visualisations, onboarding workflows, and new APIs to correlate data across AWS services. Wrote the first \href{https://aws.amazon.com/blogs/machine-learning/optimizing-application-performance-with-amazon-codeguru-profiler/}{public blog post}.}
-			\resitem{Took on an informal engineering team lead role, mentoring other engineers through projects and regularly improved and simplified development and operational processes. E.g. introduced Kanban and simpler prioritisation discussions, follow-the-sun on-call rotas, safer launch processes, weekly dashboard reviews, and reusable infrastructure libraries (removing over 10k lines of code).}
-			\resitem{Took ownership over the console (front-end) infrastructure and codebase, ensuring a high quality bar as new engineers took on front-end work and the service extended to 5 new AWS regions. Personally improved page performance by 50\% and reduced bundle size by 20\%.}
-		\end{itemize}
-
-		\item
-		\ressubheading{Amazon}{Edinburgh, UK}{Software Development Engineer II / I / Intern [Java, TypeScript, React, AWS]}{Sep 2017 - Sep 2019}
-		\begin{itemize}
-			\resitem{Integrated my team's video rendering API with a public Amazon Advertising product. Utilised AWS Lambda/DynamoDB/S3 for a new micro-service mediator with automated alarming, along with new TypeScript/React components.}
-			\resitem{Launched a new programmatic video advertising program and increased ad performance by 10x in 6 months through rigorous A/B experimentation, exceeding our team goal of \$500k sales.}
-			\resitem{Improved my team's development and release processes over time, e.g. introduced SonarQube for month-on-month code quality improvements, and new tools to track the team's operational load.}
-			\resitem{Internship: Created a \href{https://pdfpiw.uspto.gov/.piw?PageNum=0&docid=10297026&IDKey=E3B5AD2132FF&HomeUrl=\%2F\%2Fpatft.uspto.gov\%2Fnetahtml\%2FPTO\%2Fpatimg.htm}{patent-awarded} prototype application to convert existing video content into personalisable videos in a fast (real-time)
-			and automated fashion, using a Java/OpenCV pipeline.}
-		\end{itemize}
-
-		\item
-		\ressubheading{TBR Global Chauffeuring}{Glasgow, UK}{Software Developer (Intern, then Part-Time) [C\#, MVC.NET, JavaScript]}{Jun 2015 - May 2016}
-		\begin{itemize}
-			\resitem{Cut manual ingestion time by 95\% by preprocessing data using OpenAddressesUK and Google APIs.}
-		\end{itemize}
-
-		\item
-		\ressubheading{Chi Squared Innovations}{Remote}{Software Developer (Part-Time) [Python, Django, JavaScript, d3.js]}{Sep 2014 - Jun 2015}
-
+		\resitem{\textbf{Enhanced the mission-critical safety of global trading} by designing and developing real-time rejected trade analysis tooling, with great customer feedback.}
+		\resitem{Led a project to unblock new ways of trading by \textbf{reducing the effort to configure new trading connections by 90\%}, through a new connection config DSL and approval process.}
+		\resitem{Implemented a widget-based UI framework enabling traders to \textbf{build their own dashboards} of components implemented by other teams, \textbf{reducing the need for bespoke development}.}
+		\resitem{\textbf{Improved the team's satisfaction with development processes} by implementing new SDLC practices, such as running regular retrospectives, reducing code review turnaround time, and moving project management to a more flexible kanban model.}
+		\resitem{Voluntary member of several working groups, including User Interface, and Observability groups, helping \textbf{establish technical direction and best practices across the company}.}
 	\end{itemize}
 
-	\resheading{Education}
+	\item
+	\ressubheading{AWS (Amazon CodeGuru Profiler)}{London, UK}{Software Development Engineer II [TypeScript, React, Kotlin, Java, AWS]}{Sep 2019 - Oct 2021}
 	\begin{itemize}
-		\item
-		\ressubheading{University of Glasgow}{Glasgow, UK}{BSc (Hons) in Computer Science (First Class)}{2013 - 2017}
-		\begin{itemize}
-			\resitem{Received top-of-class prize in Year 3, and first prize at Glasgow University Hackathon 2015.}
-		\end{itemize}
+		\resitem{\textbf{Launched a new AWS service with a global team}, and led development of simplified profiling visualisations, onboarding workflows, and new APIs for data correlation across AWS services. Authored the first \href{https://aws.amazon.com/blogs/machine-learning/optimizing-application-performance-with-amazon-codeguru-profiler/}{public blog post}, increasing product visibility.}
+		\resitem{\textbf{Owned and optimized} the console front-end, maintaining a high-quality codebase as the service expanded to 5 new AWS regions. Guided new engineers in front-end best practices, personally \textbf{cutting page load times by 50\% and reducing bundle size by 20\%}.}
+		\resitem{\textbf{Fostered a culture of continuous improvement} by mentoring other engineers and regularly improving development and ops processes. Introduced follow-the-sun on-call rotas and safer feature launch processes. Implemented reusable infrastructure libraries, \textbf{removing over 10k lines of code}.}
 	\end{itemize}
+
+	\item
+	\ressubheading{Amazon}{Edinburgh, UK}{Software Development Engineer II / I / Intern [Java, TypeScript, React, AWS]}{Sep 2017 - Sep 2019}
+	\begin{itemize}
+		\resitem{Launched a new programmatic video advertising program and \textbf{increased ad performance by 10x in 6 months} through rigorous A/B experimentation, \textbf{exceeding our team goal of \$500k sales}.}
+		\resitem{\textbf{Enabled small advertisers to get more value from their videos} by integrating my team's video rendering API with the Amazon Stores service. Utilised AWS Lambda, DynamoDB, and S3 to bridge the services, and built new TypeScript/React front-end components for Amazon Stores.}
+		\resitem{Internship: \textbf{Created a \href{https://pdfpiw.uspto.gov/.piw?PageNum=0&docid=10297026&IDKey=E3B5AD2132FF&HomeUrl=\%2F\%2Fpatft.uspto.gov\%2Fnetahtml\%2FPTO\%2Fpatimg.htm}{patent-awarded} prototype} application to convert existing video content into personalisable videos in a fast (real-time)
+		and automated fashion, using Java and OpenCV.}
+	\end{itemize}
+
+	\item
+	\ressubheading{TBR Global Chauffeuring}{Glasgow, UK}{Software Developer (Intern, then Part-Time) [C\#, MVC.NET, JavaScript]}{Jun 2015 - May 2016}
+	\begin{itemize}
+		\resitem{\textbf{Cut manual ingestion time of new airport arrivals by 95\%} by preprocessing data using OpenAddressesUK and Google APIs.}
+	\end{itemize}
+
+	\item
+	\ressubheading{Chi Squared Innovations}{Remote}{Software Developer (Part-Time) [Python, Django, JavaScript, d3.js]}{Sep 2014 - Jun 2015}
+
+\end{itemize}
+
+\pagebreak
+
+\resheading{Education}
+\begin{itemize}
+	\item
+	\ressubheading{University of Glasgow}{Glasgow, UK}{First Class BSc (Hons) in Computer Science}{2013 - 2017}
+	\begin{itemize}
+		\resitem{\textbf{Received Third Year Class Prize} - Strong A grades in all Computer Science classes, and many Mathematics classes.}
+		\resitem{First Prize at Glasgow University Tech Society Hackathon 2015.}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Projects}
+\begin{itemize}
+	\item
+		\ressubheading{Evolution Racing Academy}{\url{https://evolutionracing.academy}}
+		{Online racing league dedicated to coaching newer drivers}{2022 - Present}
+		\begin{itemize}
+			\resitem{\textbf{Voluntary lead developer} of web platform powering automated ingestion and tracking of race results, driver statistics, and league standings.}
+			\resitem{Currently \textbf{over 500 drivers} registered and 11 seasons of racing.}
+			\resitem{\textbf{Built using Remix framework}, React, TypeScript, TailwindCSS, and Prisma ORM.}
+			\resitem{\textbf{Continuously deployed via GitHub Actions to Fly.io} where it runs with an embedded SQLite database.}
+		\end{itemize}
+
+	\item
+		\ressubheading{IsaacJordan.me}{\url{https://isaacjordan.me}}
+		{Personal website and blog}{2016 - Present}
+		\begin{itemize}
+			\resitem{\textbf{Since 2016 I've maintained a personal website} representing my work history, along with an occasional blog containing technical and non-technical articles.}
+			\resitem{Updating the tech stack of this website has been a great way to \textbf{experiment with new technologies}.}
+			\resitem{Originally developed with Python and Django on AWS Lambda / RDS, now uses Remix framework, React, TypeScript, TailwindCSS, and Sanity CMS.}
+		\end{itemize}
+
+	\item
+		\ressubheading{OBS Screen Recognition}{\url{https://github.com/isaac-jordan/obs-screen-recognition}}
+		{Open Broadcasting Studio plugin}{2020}
+		\begin{itemize}
+			\resitem{\textbf{Developed an OBS plugin for Twitch streamers} to automatically switch scenes in OBS depending on in-game content}
+			\resitem{\textbf{Used within the Hell Let Loose game streaming community} to hide tactically sensitive information from broadcast}
+			\resitem{Built using Python, OpenCV for computer vision, Numpy, and MSS for performant screen grabs.}
+		\end{itemize}
+
+	\item
+		\ressubheading{Google Maps API .NET}{\url{https://github.com/ericnewton76/gmaps-api-net}}
+		{Google Maps API C\# Library}{Jun 2015 - Sept 2015}
+		\begin{itemize}
+			\resitem{Significant contributor to open source class library.}
+			\resitem{Personally \textbf{implemented Places API, and TimeZone API} in the library (credited as 'Sheepzez').}
+			\resitem{Helped manage tickets created by API consumers, and decided how issues are tackled.}
+		\end{itemize}
+
+\end{itemize}
+
+\resheading{Skills}
+\begin{description}
+	\item[Languages:]
+	JavaScript (8 years), TypeScript (7 years), C\# (4 years), Java (4 years), SQL (4 years), Kotlin (2 years), Python (2 years)
+	\item[Front-End Technologies:]
+	React (5 years), Angular (3 years), Material UI, Remix, DaisyUI, TailwindCSS, Bootstrap, HTML5, CSS4, jQuery
+	\item[Back-End Technologies:]
+	Kubernetes (k8s), Kafka, PostgreSQL, Microsoft SQL Server, Docker, SQLite, Remix, Prisma ORM, HDFS, Trino, Django, OpenCV
+	\item[Platforms:]
+	AWS (Lambda, Fargate, DynamoDB, S3, RDS, CloudFormation, CloudWatch, CodePipeline, IAM, SNS, SQS, CDK, etc.), Kubernetes (k8s), Fly.io, GitHub Actions, Jenkins CI/CD
+	\item[Miscellaneous:]
+	Passionate about crafting high quality UX from both the back-end and front-end. Exceptional troubleshooting and debugging skills. Able to quickly grasp interactions across service boundaries.
+\end{description}
 
 \end{document}
